@@ -15,7 +15,7 @@ st.write(df.head(10))
 #st.line_chart(df)
 #st.line_chart(df, x="interest_rate", y="unemployment_rate", color="stock_index_price")
 st.line_chart(
-   df, x="Hours", y="Scores", color=["#FF0000", "#0000FF"]  # Optional
+   df, x="Hours", y="Scores"  # Optional
 )
 
 x=df['Hours']
