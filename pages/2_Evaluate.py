@@ -55,9 +55,9 @@ rmse_values = df_eval['RMSE'].tolist()
 mse_values = df_eval['MSE'].tolist()
 r2_values = df_eval['R2_Score'].tolist()
 
-chart_data = df_eval
-
-st.line_chart(chart_data)
+st.line_chart(
+   df_eval, x="Data_split", y=["RMSE", "MSE", "R2_Score"], color=["#FF0000", "#0000FF", "#00FF00"]  # Optional
+)
 
 x_train,x_test,y_train,y_test =train_test_split(x_poly,y, test_size=0.1,random_state=0)
 modelRegress=LinearRegression()
