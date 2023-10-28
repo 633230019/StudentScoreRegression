@@ -51,7 +51,7 @@ for test_size in test_sizes:
 
 # Create a DataFrame from the list of data dictionaries
 df_eval = pd.DataFrame(data_list)
-st.header("ตารางเทียบผลการประเมินโมเดล")
+st.header("ตารางเทียบผลการประเมินโมเดลตามการแบ่งชุดข้อมูล")
 st.write(df_eval)
 st.line_chart(
    df_eval, x="Data_split", y=["RMSE", "MSE", "R2_Score"], color=["#FF0000", "#0000FF", "#00FF00"]  # Optional
@@ -63,7 +63,7 @@ modelRegress.fit(x_train,y_train)
 y_predict=modelRegress.predict(x_test)
 df_predict_compare = pd.DataFrame({'y_test': y_test, 'y_predict': y_predict})
 df_predict_compare.index = range(1, 11)
-st.header("ตารางเทียบผลการพยากรณ์คะแนนจากโมเดล 90/10")
+st.header("ตารางเทียบผลการพยากรณ์คะแนนจากการแบ่งชุดข้อมูล 90/10")
 st.write(df_predict_compare)
 st.line_chart(
    df_predict_compare, color=["#FF0000", "#0000FF"]
