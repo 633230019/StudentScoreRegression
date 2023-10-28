@@ -21,6 +21,9 @@ st.write("")
 st.write("")
 st.write("")
 st.write("")
+st.write("")
+st.write("")
+st.write("")
 st.header("💯พยากรณ์คะแนนการเรียนจากเทคนิค Linear Regression!💯")
 
 def load_lottieurl(url: str):
