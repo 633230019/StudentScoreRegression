@@ -61,7 +61,7 @@ x_train,x_test,y_train,y_test =train_test_split(x_poly,y, test_size=0.1,random_s
 modelRegress=LinearRegression()
 modelRegress.fit(x_train,y_train)
 y_predict=modelRegress.predict(x_test)
-df_predict_compare = pd.DataFrame({'y_test': y_test, 'y_predict': y_predict}, index=[1,2,3,4,5,6,7,8,9,10])
+df_predict_compare = pd.DataFrame({'y_test': y_test, 'y_predict': y_predict})
 st.header("ตารางเทียบผลการพยากรณ์คะแนนจากโมเดล 90/10")
 st.write(df_predict_compare)
 st.line_chart(
