@@ -62,7 +62,7 @@ modelRegress=LinearRegression()
 modelRegress.fit(x_train,y_train)
 y_predict=modelRegress.predict(x_test)
 df_predict_compare = pd.DataFrame({'y_test': y_test, 'y_predict': y_predict})
-df_predict_compare = range(1, 11)
+df_predict_compare.index = range(1, 11)
 st.header("ตารางเทียบผลการพยากรณ์คะแนนจากโมเดล 90/10")
 st.write(df_predict_compare)
 st.line_chart(
