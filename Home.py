@@ -19,6 +19,8 @@ st.write("")
 st.write("")
 st.write("")
 st.write("")
+st.write("")
+st.write("")
 st.header("💯พยากรณ์คะแนนการเรียนจากเทคนิค Linear Regression!💯")
 
 def load_lottieurl(url: str):
@@ -27,7 +29,7 @@ def load_lottieurl(url: str):
         return None
     return r.json()
 
-lottie_url_book = "https://lottie.host/16708c38-c755-4a1e-8c4b-ef3ec4910132/OOHmGfUtSR.json"
+lottie_url_book = "https://lottie.host/f1caede9-11ad-4fa0-a873-d3f7381b441c/2pcTSp1O8U.json"
 lottie_book = load_lottieurl(lottie_url_book)
 st_lottie(lottie_book, key="book")
 
