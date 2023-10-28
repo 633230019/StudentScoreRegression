@@ -6,6 +6,9 @@ from sklearn.preprocessing import PolynomialFeatures
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score,mean_squared_error
+from util import set_background
+
+set_background('./bg/bg2.jpg')
 
 st.header("ตารางแสดงข้อมูลคะแนนการเรียนจากชั่วโมงการเรียน")
 df=pd.read_csv("./data/score.csv")
@@ -50,11 +53,6 @@ for test_size in test_sizes:
 df_eval = pd.DataFrame(data_list)
 st.header("ตารางเทียบผลการประเมินโมเดล")
 st.write(df_eval)
-split_ratios = df_eval['Data_split'].tolist()
-rmse_values = df_eval['RMSE'].tolist()
-mse_values = df_eval['MSE'].tolist()
-r2_values = df_eval['R2_Score'].tolist()
-
 st.line_chart(
    df_eval, x="Data_split", y=["RMSE", "MSE", "R2_Score"], color=["#FF0000", "#0000FF", "#00FF00"]  # Optional
 )
@@ -66,3 +64,6 @@ y_predict=modelRegress.predict(x_test)
 df_predict_compare = pd.DataFrame({'y_test': y_test, 'y_predict': y_predict})
 st.header("ตารางเทียบผลการพยากรณ์คะแนนจากโมเดล 90/10")
 st.write(df_predict_compare)
+st.line_chart(
+   df_predict_compare, x="y_test", y=["y_test", "y_predict"], color=["#FF0000", "#0000FF"]  # Optional
+)

@@ -6,7 +6,9 @@ from sklearn.preprocessing import PolynomialFeatures
 import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import r2_score,mean_squared_error
+from util import set_background
 
+set_background('./bg/bg2.jpg')
 st.title("พยากรณ์คะแนนจากชั่วโมงการเรียนของนักเรียน")
 st.header("ตารางแสดงข้อมูลคะแนนการเรียนจากชั่วโมงการเรียน")
 
