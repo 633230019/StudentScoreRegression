@@ -10,7 +10,7 @@ st.set_page_config(
     page_title="Datascience Project",
     page_icon= ":bar_chart:",
 )
-set_background('./bg/bg1.jpg')
+set_background('./bg/bg2.jpg')
 st.sidebar.success("เลือกรายการด้านบน.")
 st.header("💯พยากรณ์คะแนนการเรียนจากเทคนิค Linear Regression!💯")
 
