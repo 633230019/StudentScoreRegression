@@ -1,17 +1,25 @@
 import json
 import time
 import requests
-
+from util import set_background
+set_background('./bgs/bg5.png')
 import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_lottie import st_lottie_spinner
 
+set_background('./bgs/bg5.png')
 st.set_page_config(
     page_title="Datascience Project",
     page_icon= ":bar_chart:",
 )
 st.sidebar.success("เลือกรายการด้านบน.")
-
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
+st.write("")
 st.header("💯พยากรณ์คะแนนการเรียนจากเทคนิค Linear Regression!💯")
 
 def load_lottieurl(url: str):
