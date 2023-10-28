@@ -53,7 +53,7 @@ for test_size in test_sizes:
 df_eval = pd.DataFrame(data_list)
 st.header("ตารางเทียบผลการประเมินโมเดล")
 st.write(df_eval)
-st.line_chart(
+st.scatter_chart(
    df_eval, x="Data_split", y=["RMSE", "MSE", "R2_Score"], color=["#FF0000", "#0000FF", "#00FF00"]  # Optional
 )
 
