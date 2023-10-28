@@ -55,7 +55,7 @@ rmse_values = df_eval['RMSE'].tolist()
 mse_values = df_eval['MSE'].tolist()
 r2_values = df_eval['R2_Score'].tolist()
 
-chart_data = df_eval, columns=["a", "b", "c","d","e"])
+chart_data = df_eval
 
 st.line_chart(chart_data)
 
