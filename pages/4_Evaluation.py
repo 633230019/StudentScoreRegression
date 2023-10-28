@@ -16,6 +16,11 @@ st.line_chart(
    df, x="Hours", y="Scores"   # Optional
 )
 
+x=df[['Hours']]
+y=df['Scores']
+pf=PolynomialFeatures(degree=3)
+x_poly=pf.fit_transform(x)
+
 # Define a list of test sizes
 test_sizes = [0.1, 0.2, 0.3, 0.4, 0.5]
 
