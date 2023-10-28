@@ -7,3 +7,4 @@ plotly==5.9.0
 openpyxl
 scikit-learn
 streamlit_lottie
+Pillow==9.5.0
