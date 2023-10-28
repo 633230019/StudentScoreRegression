@@ -10,20 +10,8 @@ st.set_page_config(
     page_title="Datascience Project",
     page_icon= ":bar_chart:",
 )
-set_background('./bg/bg5.png')
+set_background('./bg/bg1.png')
 st.sidebar.success("เลือกรายการด้านบน.")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
-st.write("")
 st.header("💯พยากรณ์คะแนนการเรียนจากเทคนิค Linear Regression!💯")
 
 def load_lottieurl(url: str):
