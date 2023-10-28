@@ -64,6 +64,6 @@ y_predict=modelRegress.predict(x_test)
 df_predict_compare = pd.DataFrame({'y_test': y_test, 'y_predict': y_predict})
 st.header("ตารางเทียบผลการพยากรณ์คะแนนจากโมเดล 90/10")
 st.write(df_predict_compare)
-st.line_chart(
-   df_predict_compare, x="y_test", y=["y_test", "y_predict"], color=["#FF0000", "#0000FF"]  # Optional
+st.scatter_chart(
+   df_predict_compare
 )
