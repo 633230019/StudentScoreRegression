@@ -65,5 +65,5 @@ df_predict_compare = pd.DataFrame({'y_test': y_test, 'y_predict': y_predict})
 st.header("ตารางเทียบผลการพยากรณ์คะแนนจากโมเดล 90/10")
 st.write(df_predict_compare)
 st.line_chart(
-   df_predict_compare
+   df_predict_compare, color=["#FF0000", "#0000FF"]
 )
