@@ -13,7 +13,7 @@ st.write(df.head(10))
 
 st.header("Show Chart")
 st.line_chart(
-   df, x="ชั่วโมงการเรียน", y="คะแนน"  # Optional
+   df, x="Hours", y="Scores"   # Optional
 )
 
 # Define a list of test sizes
