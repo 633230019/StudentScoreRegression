@@ -2,7 +2,6 @@ import json
 import time
 import requests
 from util import set_background
-set_background('./bgs/bg5.png')
 import streamlit as st
 from streamlit_lottie import st_lottie
 from streamlit_lottie import st_lottie_spinner
